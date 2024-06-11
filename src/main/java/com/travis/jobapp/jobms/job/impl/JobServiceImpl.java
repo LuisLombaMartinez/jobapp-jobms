@@ -13,13 +13,9 @@ import com.travis.jobapp.jobms.job.JobService;
 @Service
 public class JobServiceImpl implements JobService {
     JobRepository jobRepository;
-    // CompanyService companyService;
 
-    // public JobServiceImpl(JobRepository jobRepository, CompanyService
-    // companyService) {
     public JobServiceImpl(JobRepository jobRepository) {
         this.jobRepository = jobRepository;
-        // this.companyService = companyService;
     }
 
     @Override
@@ -65,11 +61,6 @@ public class JobServiceImpl implements JobService {
 
     @Override
     public List<Job> getByCompanyId(UUID companyId) {
-        try {
-            // companyService.getById(companyId);
-        } catch (ResourceNotFoundException e) {
-            throw new ResourceNotFoundException("Company not found with id " + companyId);
-        }
         return jobRepository.findByCompanyId(companyId);
     }
 

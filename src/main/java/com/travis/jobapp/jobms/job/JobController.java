@@ -31,6 +31,11 @@ public class JobController {
         return ResponseEntity.ok(jobService.getAll());
     }
 
+    @GetMapping
+    public ResponseEntity<List<Job>> getByCompanyId(@PathVariable UUID companyId) {
+        return ResponseEntity.ok(jobService.getByCompanyId(companyId));
+    }
+
     @PostMapping
     public ResponseEntity<UUID> createJob(@Valid @RequestBody Job job) {
         UUID id = jobService.create(job);
