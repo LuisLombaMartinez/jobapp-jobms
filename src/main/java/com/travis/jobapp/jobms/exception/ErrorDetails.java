@@ -1,4 +1,4 @@
-package com.travis.jobms.exception;
+package com.travis.jobapp.jobms.exception;
 
 import java.util.Date;
 

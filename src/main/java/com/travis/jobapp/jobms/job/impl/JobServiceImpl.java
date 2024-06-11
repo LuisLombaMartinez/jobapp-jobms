@@ -1,15 +1,14 @@
-package com.travis.jobms.job.impl;
+package com.travis.jobapp.jobms.job.impl;
 
 import java.util.List;
 import java.util.UUID;
 
 import org.springframework.stereotype.Service;
 
-// import com.travis.jobms.company.CompanyService;
-import com.travis.jobms.exception.ResourceNotFoundException;
-import com.travis.jobms.job.Job;
-import com.travis.jobms.job.JobRepository;
-import com.travis.jobms.job.JobService;
+import com.travis.jobapp.jobms.exception.ResourceNotFoundException;
+import com.travis.jobapp.jobms.job.Job;
+import com.travis.jobapp.jobms.job.JobRepository;
+import com.travis.jobapp.jobms.job.JobService;
 
 @Service
 public class JobServiceImpl implements JobService {

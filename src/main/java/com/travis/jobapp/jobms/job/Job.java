@@ -1,4 +1,4 @@
-package com.travis.jobms.job;
+package com.travis.jobapp.jobms.job;
 
 import java.util.UUID;
 
